@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Ravi Teja | Adilabad — Comfort, Convenience & Warm Hospitality</title>
+  <meta name="description" content="Hotel Ravi Teja in Adilabad, Telangana offers comfortable rooms, warm hospitality and excellent value for money. Book your stay near Adilabad Bus Stand on NH7." />
+  <meta name="keywords" content="Hotel Ravi Teja Adilabad, hotels in Adilabad, hotel accommodation Adilabad, hotel room booking Adilabad, Adilabad Telangana hotel" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Hotel Ravi Teja",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "NH 7, Near Bus Stand, Ravindra Nagar Colony",
+      "addressLocality": "Adilabad",
+      "addressRegion": "Telangana",
+      "postalCode": "504001",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91-9000000000",
+    "url": "https://hotelraviteja.com"
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <div class="logo-emblem">
+          <span class="logo-rt">RT</span>
+          <div class="logo-crown">♛</div>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">HOTEL RAVI TEJA</span>
+          <span class="logo-location">ADILABAD</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#rooms" class="nav-link">Rooms</a></li>
+        <li><a href="#amenities" class="nav-link">Amenities</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="nav-cta" id="nav-book-btn">Book Your Stay →</a>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#rooms" class="mobile-link">Rooms</a></li>
+      <li><a href="#amenities" class="mobile-link">Amenities</a></li>
+      <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+      <li><a href="#reviews" class="mobile-link">Reviews</a></li>
+      <li><a href="#about" class="mobile-link">About Us</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-gold mobile-cta">Book Your Stay →</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="assets/hero_room.png" alt="Luxurious hotel room at Hotel Ravi Teja" class="hero-img" id="hero-parallax" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge fade-up">A WARM WELCOME TO ADILABAD</div>
+      <h1 class="hero-title fade-up delay-1">Hotel Ravi Teja</h1>
+      <p class="hero-tagline fade-up delay-2">
+        <span class="tag-dot">Comfort</span>
+        <span class="dot">•</span>
+        <span class="tag-dot gold">Convenience</span>
+        <span class="dot">•</span>
+        <span class="tag-dot">Memorable Stays</span>
+      </p>
+      <p class="hero-desc fade-up delay-3">Experience a perfect blend of comfort, convenience and warm hospitality in the heart of Adilabad.</p>
+
+      <div class="hero-actions fade-up delay-4">
+        <a href="#contact" class="btn-gold" id="hero-book-btn">Book Your Stay →</a>
+        <a href="#rooms" class="btn-outline" id="hero-explore-btn">
+          <span class="play-icon">▶</span> Explore Our Rooms
+        </a>
+      </div>
+    </div>
+
+    <!-- Floating Availability Panel -->
+    <div class="availability-panel fade-up delay-5" id="availability-panel">
+      <div class="avail-field">
+        <label for="checkin">📅 Check In</label>
+        <input type="date" id="checkin" class="avail-input" />
+      </div>
+      <div class="avail-divider"></div>
+      <div class="avail-field">
+        <label for="checkout">📅 Check Out</label>
+        <input type="date" id="checkout" class="avail-input" />
+      </div>
+      <div class="avail-divider"></div>
+      <div class="avail-field">
+        <label for="guests">👥 Guests</label>
+        <select id="guests" class="avail-input">
+          <option>1 Adult</option>
+          <option selected>2 Adults</option>
+          <option>2 Adults, 1 Child</option>
+          <option>2 Adults, 2 Children</option>
+          <option>3 Adults</option>
+        </select>
+      </div>
+      <button class="btn-gold avail-btn" id="check-availability-btn" onclick="checkAvailability()">Check Availability →</button>
+    </div>
+
+    <!-- Hero Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       WHY CHOOSE US
+  ═══════════════════════════════════════════════ -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-label">WHY CHOOSE US</div>
+      <h2 class="section-title">Why Choose <span class="gold-text">Hotel Ravi Teja?</span></h2>
+      <p class="section-subtitle">Crafted for your comfort — every detail designed to make your stay memorable.</p>
+
+      <div class="features-grid">
+        <div class="feature-card tilt-card" id="feature-1">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Prime Location</h3>
+          <p class="feature-desc">Located in the heart of Adilabad, close to the main Bus Stand on NH7. Easy access to transport, markets and popular places.</p>
+          <div class="feature-glow"></div>
+        </div>
+
+        <div class="feature-card tilt-card" id="feature-2">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Comfortable Rooms</h3>
+          <p class="feature-desc">Well-maintained AC and Non-AC rooms with modern amenities, clean linens, and a restful atmosphere for a great night's sleep.</p>
+          <div class="feature-glow"></div>
+        </div>
+
+        <div class="feature-card tilt-card" id="feature-3">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Guest-Friendly Service</h3>
+          <p class="feature-desc">Our dedicated team is always available to ensure your comfort and make your stay as pleasant as possible.</p>
+          <div class="feature-glow"></div>
+        </div>
+
+        <div class="feature-card tilt-card" id="feature-4">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Clean &amp; Well-Maintained</h3>
+          <p class="feature-desc">Hygiene is our priority. Daily housekeeping ensures every room meets consistent cleanliness standards.</p>
+          <div class="feature-glow"></div>
+        </div>
+
+        <div class="feature-card tilt-card" id="feature-5">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Value for Money</h3>
+          <p class="feature-desc">Premium comfort at honest prices. Ideal for business travelers, families, and leisure guests seeking quality on a budget.</p>
+          <div class="feature-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       ROOMS & PRICING
+  ═══════════════════════════════════════════════ -->
+  <section class="rooms-section" id="rooms">
+    <div class="rooms-bg-pattern"></div>
+    <div class="container">
+      <div class="section-label">OUR ROOMS</div>
+      <div class="rooms-header">
+        <h2 class="section-title">Designed For <span class="gold-text">Your Comfort —</span></h2>
+        <a href="#contact" class="btn-outline-small" id="view-all-rooms-btn">View All Rooms →</a>
+      </div>
+
+      <div class="rooms-grid">
+        <!-- Non-AC Room -->
+        <div class="room-card" id="room-1">
+          <div class="room-img-wrap">
+            <img src="assets/deluxe_room.png" alt="Standard Non-AC room at Hotel Ravi Teja Adilabad" class="room-img" loading="lazy"/>
+            <div class="room-badge">NON-AC</div>
+            <div class="room-img-overlay"></div>
+          </div>
+          <div class="room-body">
+            <div class="room-meta">
+              <span class="room-meta-item">👥 1–2 Guests</span>
+              <span class="room-meta-item">🛏 1 Bed</span>
+              <span class="room-meta-item">📺 TV</span>
+            </div>
+            <h3 class="room-name">Standard Room</h3>
+            <p class="room-desc">A clean and comfortable room with all essential amenities for a restful overnight stay.</p>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="price-from">From</span>
+                <span class="price-amount">₹700</span>
+                <span class="price-night">/ night</span>
+              </div>
+              <a href="#contact" class="btn-room" id="enquire-room-1">Enquire Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- AC Room -->
+        <div class="room-card featured-room" id="room-2">
+          <div class="room-img-wrap">
+            <img src="assets/executive_room.png" alt="AC room at Hotel Ravi Teja Adilabad" class="room-img" loading="lazy"/>
+            <div class="room-badge popular">AC ROOM</div>
+            <div class="room-img-overlay"></div>
+          </div>
+          <div class="room-body">
+            <div class="room-meta">
+              <span class="room-meta-item">👥 1–2 Guests</span>
+              <span class="room-meta-item">🛏 1 Bed</span>
+              <span class="room-meta-item">❄ AC</span>
+              <span class="room-meta-item">📺 TV</span>
+            </div>
+            <h3 class="room-name">Deluxe AC Room</h3>
+            <p class="room-desc">Fully air-conditioned room with modern furnishings, hot water, and a relaxed atmosphere for a comfortable stay.</p>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="price-from">From</span>
+                <span class="price-amount">₹999</span>
+                <span class="price-night">/ night</span>
+              </div>
+              <a href="#contact" class="btn-room" id="enquire-room-2">Enquire Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Suite / Premium Room -->
+        <div class="room-card" id="room-3">
+          <div class="room-img-wrap">
+            <img src="assets/suite_room.png" alt="Premium suite at Hotel Ravi Teja Adilabad" class="room-img" loading="lazy"/>
+            <div class="room-badge">PREMIUM</div>
+            <div class="room-img-overlay"></div>
+          </div>
+          <div class="room-body">
+            <div class="room-meta">
+              <span class="room-meta-item">👥 2–3 Guests</span>
+              <span class="room-meta-item">🛏 1 Bed</span>
+              <span class="room-meta-item">❄ AC</span>
+              <span class="room-meta-item">🚿 Hot Water</span>
+            </div>
+            <h3 class="room-name">Premium Suite</h3>
+            <p class="room-desc">Our most spacious and elegant room, featuring premium furnishings and a range of enhanced in-room facilities.</p>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="price-contact">Contact for Current Rates</span>
+              </div>
+              <a href="#contact" class="btn-room" id="enquire-room-3">Enquire Now →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="rooms-note">* Prices are indicative and may vary by date, occupancy, and season. Contact us for confirmed rates.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       AMENITIES
+  ═══════════════════════════════════════════════ -->
+  <section class="amenities-section" id="amenities">
+    <div class="container">
+      <div class="amenities-inner">
+        <div class="amenities-left">
+          <div class="section-label">HOTEL AMENITIES</div>
+          <h2 class="section-title">Everything You Need For A <span class="gold-text">Hassle-Free Stay</span></h2>
+          <p class="section-subtitle">Thoughtfully equipped with the essentials that make every guest feel at home.</p>
+
+          <div class="amenities-grid">
+            <div class="amenity-card" id="amenity-1">
+              <div class="amenity-icon">📶</div>
+              <div class="amenity-info">
+                <h4>Free Wi-Fi</h4>
+                <p>Stay connected throughout your visit</p>
+              </div>
+            </div>
+            <div class="amenity-card" id="amenity-2">
+              <div class="amenity-icon">🛎</div>
+              <div class="amenity-info">
+                <h4>24/7 Room Service</h4>
+                <p>Assistance available round the clock</p>
+              </div>
+            </div>
+            <div class="amenity-card" id="amenity-3">
+              <div class="amenity-icon">🚗</div>
+              <div class="amenity-info">
+                <h4>Free Parking</h4>
+                <p>On-site self-parking at no extra charge</p>
+              </div>
+            </div>
+            <div class="amenity-card" id="amenity-4">
+              <div class="amenity-icon">❄</div>
+              <div class="amenity-info">
+                <h4>Air Conditioning</h4>
+                <p>Available in select rooms for year-round comfort</p>
+              </div>
+            </div>
+            <div class="amenity-card" id="amenity-5">
+              <div class="amenity-icon">🧹</div>
+              <div class="amenity-info">
+                <h4>Daily Housekeeping</h4>
+                <p>Fresh and clean rooms maintained daily</p>
+              </div>
+            </div>
+            <div class="amenity-card" id="amenity-6">
+              <div class="amenity-icon">🚿</div>
+              <div class="amenity-info">
+                <h4>Hot Water</h4>
+                <p>24-hour hot water supply in all rooms</p>
+              </div>
+            </div>
+            <div class="amenity-card" id="amenity-7">
+              <div class="amenity-icon">🔋</div>
+              <div class="amenity-info">
+                <h4>Power Backup</h4>
+                <p>Uninterrupted power supply for comfort</p>
+              </div>
+            </div>
+            <div class="amenity-card" id="amenity-8">
+              <div class="amenity-icon">📺</div>
+              <div class="amenity-info">
+                <h4>TV &amp; Entertainment</h4>
+                <p>Cable television in every room</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="amenities-right">
+          <div class="amenities-img-stack">
+            <img src="assets/hotel_exterior.png" alt="Hotel Ravi Teja building exterior Adilabad" class="amenity-main-img" loading="lazy"/>
+            <div class="amenity-img-badge">
+              <div class="logo-emblem small">
+                <span class="logo-rt small">RT</span>
+              </div>
+              <span>HOTEL RAVI TEJA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       GUEST REVIEWS
+  ═══════════════════════════════════════════════ -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-label">GUEST REVIEWS</div>
+      <div class="reviews-header">
+        <h2 class="section-title">What Our <span class="gold-text">Guests Say</span></h2>
+        <div class="reviews-nav">
+          <button class="review-nav-btn" id="review-prev" aria-label="Previous reviews">&#8592;</button>
+          <button class="review-nav-btn" id="review-next" aria-label="Next reviews">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="reviews-track-wrap">
+        <div class="reviews-track" id="reviews-track">
+
+          <div class="review-card tilt-card" id="review-1">
+            <div class="review-header">
+              <div class="review-g-icon">G</div>
+              <div class="review-stars">★★★★★</div>
+              <button class="review-more" aria-label="More options">⋮</button>
+            </div>
+            <p class="review-text">"Excellent stay! Rooms were clean, comfortable and well maintained. Staff is very polite and helpful. Highly recommended."</p>
+            <div class="review-author">
+              <div class="review-avatar" style="background:#c8a96e">RK</div>
+              <div>
+                <div class="review-name">Rakesh Kumar</div>
+                <div class="review-date">3 weeks ago · <a href="https://www.google.com/travel/search?ts=CAEaSQopEicyJTB4M2JkMjVjN2JlNmFhYWFhYjoweGM1ODgyZTI2YmMwZTIzYzcSHBIUCgcI6g8QDBgKEgcI6g8QDBgLGAEyBAgAEAAqBwoFOgNJTlI" target="_blank" rel="noopener" class="review-link">View on Google</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card tilt-card" id="review-2">
+            <div class="review-header">
+              <div class="review-g-icon">G</div>
+              <div class="review-stars">★★★★★</div>
+              <button class="review-more" aria-label="More options">⋮</button>
+            </div>
+            <p class="review-text">"Great hotel in Adilabad. Good location, neat rooms, and quick service. Value for money. Will stay again on my next visit."</p>
+            <div class="review-author">
+              <div class="review-avatar" style="background:#8b7355">SR</div>
+              <div>
+                <div class="review-name">Sravani Reddy</div>
+                <div class="review-date">1 month ago · <a href="https://www.google.com/travel/search?ts=CAEaSQopEicyJTB4M2JkMjVjN2JlNmFhYWFhYjoweGM1ODgyZTI2YmMwZTIzYzcSHBIUCgcI6g8QDBgKEgcI6g8QDBgLGAEyBAgAEAAqBwoFOgNJTlI" target="_blank" rel="noopener" class="review-link">View on Google</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card tilt-card" id="review-3">
+            <div class="review-header">
+              <div class="review-g-icon">G</div>
+              <div class="review-stars">★★★★★</div>
+              <button class="review-more" aria-label="More options">⋮</button>
+            </div>
+            <p class="review-text">"Very comfortable stay. The staff is supportive and the rooms are spacious. A pleasant experience overall. Definitely visit again."</p>
+            <div class="review-author">
+              <div class="review-avatar" style="background:#6b5a47">MV</div>
+              <div>
+                <div class="review-name">Mahesh Varma</div>
+                <div class="review-date">3 weeks ago · <a href="https://www.google.com/travel/search?ts=CAEaSQopEicyJTB4M2JkMjVjN2JlNmFhYWFhYjoweGM1ODgyZTI2YmMwZTIzYzcSHBIUCgcI6g8QDBgKEgcI6g8QDBgLGAEyBAgAEAAqBwoFOgNJTlI" target="_blank" rel="noopener" class="review-link">View on Google</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card tilt-card" id="review-4">
+            <div class="review-header">
+              <div class="review-g-icon">G</div>
+              <div class="review-stars">★★★★★</div>
+              <button class="review-more" aria-label="More options">⋮</button>
+            </div>
+            <p class="review-text">"Best place to stay in Adilabad. Good amenities and friendly staff. Clean rooms with good facilities. A pleasant experience overall."</p>
+            <div class="review-author">
+              <div class="review-avatar" style="background:#a08c6e">PS</div>
+              <div>
+                <div class="review-name">Priya Sharma</div>
+                <div class="review-date">1 month ago · <a href="https://www.google.com/travel/search?ts=CAEaSQopEicyJTB4M2JkMjVjN2JlNmFhYWFhYjoweGM1ODgyZTI2YmMwZTIzYzcSHBIUCgcI6g8QDBgKEgcI6g8QDBgLGAEyBAgAEAAqBwoFOgNJTlI" target="_blank" rel="noopener" class="review-link">View on Google</a></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="reviews-footer">
+        <p class="reviews-note">Reviews sourced from Google Business Profile. Names and content reflect publicly available reviewer information.</p>
+        <a href="https://www.google.com/travel/search?ts=CAEaSQopEicyJTB4M2JkMjVjN2JlNmFhYWFhYjoweGM1ODgyZTI2YmMwZTIzYzcSHBIUCgcI6g8QDBgKEgcI6g8QDBgLGAEyBAgAEAAqBwoFOgNJTlI" target="_blank" rel="noopener" class="btn-outline" id="read-all-reviews-btn">Read All Google Reviews →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       GALLERY
+  ═══════════════════════════════════════════════ -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-label">GALLERY</div>
+      <div class="gallery-header">
+        <h2 class="section-title">Moments At <span class="gold-text">Hotel Ravi Teja</span></h2>
+        <button class="btn-outline-small" id="view-gallery-btn" onclick="openLightbox(0)">View Gallery →</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item large" id="gallery-1" onclick="openLightbox(0)" role="button" tabindex="0" aria-label="View hero room photo">
+          <img src="assets/hero_room.png" alt="Luxurious room interior at Hotel Ravi Teja" loading="lazy"/>
+          <div class="gallery-overlay"><span>View Photo</span></div>
+        </div>
+        <div class="gallery-item" id="gallery-2" onclick="openLightbox(1)" role="button" tabindex="0" aria-label="View hotel exterior photo">
+          <img src="assets/hotel_exterior.png" alt="Hotel Ravi Teja exterior view" loading="lazy"/>
+          <div class="gallery-overlay"><span>View Photo</span></div>
+        </div>
+        <div class="gallery-item" id="gallery-3" onclick="openLightbox(2)" role="button" tabindex="0" aria-label="View deluxe room photo">
+          <img src="assets/deluxe_room.png" alt="Standard room at Hotel Ravi Teja" loading="lazy"/>
+          <div class="gallery-overlay"><span>View Photo</span></div>
+        </div>
+        <div class="gallery-item" id="gallery-4" onclick="openLightbox(3)" role="button" tabindex="0" aria-label="View executive room photo">
+          <img src="assets/executive_room.png" alt="Deluxe AC room at Hotel Ravi Teja" loading="lazy"/>
+          <div class="gallery-overlay"><span>View Photo</span></div>
+        </div>
+        <div class="gallery-item" id="gallery-5" onclick="openLightbox(4)" role="button" tabindex="0" aria-label="View suite photo">
+          <img src="assets/suite_room.png" alt="Premium suite at Hotel Ravi Teja" loading="lazy"/>
+          <div class="gallery-overlay"><span>View Photo</span></div>
+        </div>
+        <div class="gallery-item" id="gallery-6" onclick="openLightbox(5)" role="button" tabindex="0" aria-label="View lobby photo">
+          <img src="assets/hotel_lobby.png" alt="Hotel Ravi Teja reception lobby" loading="lazy"/>
+          <div class="gallery-overlay"><span>View Photo</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">✕</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">&#8592;</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Next image">&#8594;</button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" id="lightbox-img" />
+    </div>
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════════ -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-img-col">
+          <div class="about-img-stack">
+            <img src="assets/hotel_lobby.png" alt="Hotel Ravi Teja lobby and reception" class="about-main-img" loading="lazy"/>
+            <div class="about-img-accent">
+              <img src="assets/deluxe_room.png" alt="Comfortable room at Hotel Ravi Teja" class="about-accent-img" loading="lazy"/>
+            </div>
+            <div class="about-stat-badge" id="about-stat">
+              <span class="stat-number">NH7</span>
+              <span class="stat-label">Prime Location</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content-col">
+          <div class="section-label">ABOUT US</div>
+          <h2 class="section-title">A Comfortable Stay <span class="gold-text">in Adilabad.</span></h2>
+          <p class="about-text">Hotel Ravi Teja is a well-established hospitality property located on National Highway 7, near the main Bus Stand in Adilabad, Telangana. Our central location makes us the ideal choice for travellers, business guests, and families visiting the region.</p>
+          <p class="about-text">We believe in delivering genuine comfort at honest prices. Whether you are here for a quick transit stay or an extended visit, our team is committed to making your experience warm, comfortable, and memorable. From our neatly maintained rooms to our round-the-clock front desk service, every aspect of your stay is handled with care.</p>
+
+          <div class="about-pillars">
+            <div class="about-pillar">
+              <div class="pillar-line"></div>
+              <div>
+                <h4>Central Location</h4>
+                <p>Steps away from the main Bus Stand and NH7</p>
+              </div>
+            </div>
+            <div class="about-pillar">
+              <div class="pillar-line"></div>
+              <div>
+                <h4>24/7 Front Desk</h4>
+                <p>Always available to assist you</p>
+              </div>
+            </div>
+            <div class="about-pillar">
+              <div class="pillar-line"></div>
+              <div>
+                <h4>AC &amp; Non-AC Options</h4>
+                <p>Flexible room choices for every need and budget</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-gold" id="about-contact-btn">Get in Touch →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       LOCATION
+  ═══════════════════════════════════════════════ -->
+  <section class="location-section" id="location">
+    <div class="container">
+      <div class="section-label">FIND US</div>
+      <h2 class="section-title">Location &amp; <span class="gold-text">Directions</span></h2>
+
+      <div class="location-inner">
+        <div class="location-map-col">
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.1!2d78.5295!3d19.6637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd25c7be6aaaaab%3A0xc5882e26bc0e23c7!2sHotel%20Ravi%20Teja!5e0!3m2!1sen!2sin!4v1"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Hotel Ravi Teja location map"
+              id="location-map"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="location-info-col">
+          <div class="location-card" id="location-card">
+            <div class="location-detail">
+              <div class="location-icon">📍</div>
+              <div>
+                <h4>Address</h4>
+                <p>NH 7, Near Bus Stand, Ravindra Nagar Colony,<br/>Adilabad, Telangana — 504001</p>
+              </div>
+            </div>
+            <div class="location-detail">
+              <div class="location-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+919000000000" class="location-link" id="location-phone">Contact us for current number</a></p>
+              </div>
+            </div>
+            <div class="location-detail">
+              <div class="location-icon">🕐</div>
+              <div>
+                <h4>Check-In / Check-Out</h4>
+                <p>Check-in from 12:00 PM · Check-out by 11:00 AM</p>
+              </div>
+            </div>
+            <div class="location-detail">
+              <div class="location-icon">🚌</div>
+              <div>
+                <h4>Nearby Landmarks</h4>
+                <p>Adilabad Main Bus Stand · NH7 Highway · Adilabad Railway Station</p>
+              </div>
+            </div>
+
+            <a href="https://maps.google.com/?q=Hotel+Ravi+Teja+Adilabad" target="_blank" rel="noopener" class="btn-gold" id="get-directions-btn" style="display:inline-block;margin-top:1.5rem;">
+              Get Directions →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       CONTACT / BOOKING CTA
+  ═══════════════════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="contact-bg-overlay"></div>
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <div class="section-label light">GET IN TOUCH</div>
+          <h2 class="contact-title">Your Comfortable Stay<br/><span class="gold-text">Starts Here.</span></h2>
+          <p class="contact-desc">Planning a visit to Adilabad? Get in touch with Hotel Ravi Teja to enquire about room availability and current rates.</p>
+
+          <div class="contact-actions">
+            <a href="tel:+919000000000" class="btn-gold" id="call-hotel-btn">
+              📞 Call the Hotel
+            </a>
+            <a href="https://wa.me/919000000000?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20room%20availability%20at%20Hotel%20Ravi%20Teja%2C%20Adilabad." target="_blank" rel="noopener" class="btn-whatsapp" id="whatsapp-btn">
+              💬 WhatsApp Enquiry
+            </a>
+            <a href="https://maps.google.com/?q=Hotel+Ravi+Teja+Adilabad" target="_blank" rel="noopener" class="btn-outline" id="directions-btn2">
+              📍 Get Directions
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="enquiry-form" id="enquiry-form" novalidate>
+            <h3 class="form-title">Send an Enquiry</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-name">Full Name *</label>
+                <input type="text" id="f-name" name="name" placeholder="Your full name" required autocomplete="name"/>
+              </div>
+              <div class="form-group">
+                <label for="f-phone">Phone Number *</label>
+                <input type="tel" id="f-phone" name="phone" placeholder="+91 XXXXX XXXXX" required autocomplete="tel"/>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-checkin">Check-In Date</label>
+                <input type="date" id="f-checkin" name="checkin"/>
+              </div>
+              <div class="form-group">
+                <label for="f-checkout">Check-Out Date</label>
+                <input type="date" id="f-checkout" name="checkout"/>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-guests">Number of Guests</label>
+                <select id="f-guests" name="guests">
+                  <option>1 Adult</option>
+                  <option>2 Adults</option>
+                  <option>2 Adults, 1 Child</option>
+                  <option>2 Adults, 2 Children</option>
+                  <option>3+ Adults</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="f-room">Room Type</label>
+                <select id="f-room" name="room">
+                  <option>Standard (Non-AC)</option>
+                  <option>Deluxe AC Room</option>
+                  <option>Premium Suite</option>
+                  <option>Not Sure Yet</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group full">
+              <label for="f-message">Message</label>
+              <textarea id="f-message" name="message" rows="3" placeholder="Any special requests or questions…"></textarea>
+            </div>
+
+            <button type="submit" class="btn-gold form-submit" id="form-submit-btn">Send Enquiry →</button>
+
+            <div class="form-success" id="form-success" aria-live="polite">
+              ✓ Thank you! We'll get back to you shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="logo-emblem small">
+                <span class="logo-rt small">RT</span>
+                <div class="logo-crown small">♛</div>
+              </div>
+              <div class="logo-text">
+                <span class="logo-name">HOTEL RAVI TEJA</span>
+                <span class="logo-location">ADILABAD</span>
+              </div>
+            </div>
+            <p class="footer-desc">A comfortable and convenient hotel in the heart of Adilabad, offering warm hospitality and excellent value for every traveller.</p>
+            <a href="https://www.google.com/travel/search?ts=CAEaSQopEicyJTB4M2JkMjVjN2JlNmFhYWFhYjoweGM1ODgyZTI2YmMwZTIzYzcSHBIUCgcI6g8QDBgKEgcI6g8QDBgLGAEyBAgAEAAqBwoFOgNJTlI" target="_blank" rel="noopener" class="footer-google-link" id="footer-google-link">View on Google Business →</a>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home" id="footer-home">Home</a></li>
+              <li><a href="#rooms" id="footer-rooms">Rooms</a></li>
+              <li><a href="#amenities" id="footer-amenities">Amenities</a></li>
+              <li><a href="#gallery" id="footer-gallery">Gallery</a></li>
+              <li><a href="#reviews" id="footer-reviews">Guest Reviews</a></li>
+              <li><a href="#about" id="footer-about">About Us</a></li>
+              <li><a href="#contact" id="footer-contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Contact Details</h4>
+            <ul class="footer-contact-list">
+              <li>📍 NH 7, Near Bus Stand,<br/>Ravindra Nagar Colony,<br/>Adilabad, Telangana – 504001</li>
+              <li><a href="tel:+919000000000" id="footer-phone">📞 Contact us for number</a></li>
+              <li><a href="https://maps.google.com/?q=Hotel+Ravi+Teja+Adilabad" target="_blank" rel="noopener" id="footer-directions">📍 Get Directions</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Book Your Stay</h4>
+            <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1rem;">Reach us directly for best rates and availability.</p>
+            <a href="#contact" class="btn-gold" id="footer-book-btn" style="display:inline-block;">Book Now →</a>
+            <div class="footer-social" style="margin-top:1.5rem;">
+              <a href="https://wa.me/919000000000" target="_blank" rel="noopener" id="footer-whatsapp" class="footer-social-btn">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Hotel Ravi Teja, Adilabad. All rights reserved.</p>
+        <p>Designed with ♛ for premium hospitality.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
